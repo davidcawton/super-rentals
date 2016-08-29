@@ -10,10 +10,11 @@ test('should list available rentals.', function (assert) {
   });
 });
 
-test('should link to information abotu the company.', function (assert) {
+test('should link to information about the company.', function (assert) {
   visit('/');
+  click('a:contains("About")');
   andThen(function () {
-    assert.equal(currentURL(), '/about'), 'should naviagte to about');
+    assert.equal(currentURL(), '/about', 'should naviagte to about');
   });
 });
 
@@ -21,14 +22,14 @@ test('should link to contact information', function (assert) {
   visit('/');
   click('a:contains("Contact")');
   andThen(function() {
-    assert.equal.(currentURL(), 'contact', 'should navigate to contact');
+    assert.equal(currentURL(), 'contact', 'should navigate to contact');
   });
 });
 
 test('should filter the list of rentals by city.', function(assert) {
   visit('/');
   fillIn('.list-filter input', 'seattle');
-  keyEvent(.'list-filter input', 'keyup', 69);
+  keyEvent('.list-filter input', 'keyup', 69);
   andThen(function() {
     assert.equal(find('.listing').length, 1, 'should show 1 listing');
     assert.equal(find('.listing .location:contains("Seattle")').lenght, 1, 'should contain one listing with location Seattle');
