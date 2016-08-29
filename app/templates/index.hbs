@@ -1,0 +1,30 @@
+<div class="jumbo">
+  <div class="right-tomster">
+    <h2>What's Good?</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      <br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+    {{#link-to 'about' class="button"}}
+    More Info
+    {{/link-to}}
+  </div>
+
+  {{#each model as |rental|}}
+    <article class="listing">
+      <h3>{{rental.title}}</h3>
+      <div class="detail-owner">
+        <span>Owner:</span>{{rental.owner}}
+      </div>
+      <div class="detail-type">
+        <span>Type:</span>{{rental.type}}
+      </div>
+      <div class="detail-location">
+        <span>Location:</span>{{rental.location}}
+      </div>
+      <div class="detail-bedrooms">
+        <span>Bedrooms:</span>{{rental.rooms}}
+      </div>
+    </article>
+  {{/each}}
+</div>
