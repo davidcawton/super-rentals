@@ -28,5 +28,9 @@
   "white": false,
   "eqnull": true,
   "esversion": 6,
-  "unused": true
+  "unused": true,
+  "jquery": false,
+  "globals": {
+    "angular": false
+  }
 }
