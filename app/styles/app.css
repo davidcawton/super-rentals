@@ -27,6 +27,7 @@ p, h1, h2, h3, li, a {
 .listings {
   width: 100%;
   display: flex;
+  align-items: center;
 }
 
 /*TOP*/
@@ -126,17 +127,18 @@ background: rgb(67, 165, 214);
 }
 
 .dog-img {
-  width: 50%;
-  height: 100%;
+  width: 45%;
+  height: 95%;
+  padding: 15px;
 }
+
 .middle-p{
   font-family: 'BioRhyme', serif;
   padding-left: 5px;
 }
 
 .middle-title {
-  margin: 10px 0px;
-
+  margin: 50px 0px 0px 0px;
   font-size: 3em;
   text-decoration: overline;
   color: #111;
@@ -166,16 +168,41 @@ background: rgb(67, 165, 214);
 
 .listings-section {
   justify-content: space-around;
-  background: rgba(67, 165, 214, 0.9);
+  flex-direction: column;
+  background: #fff;
   width: 100%;
-  height: 500px;
+  height: 300px;
 }
 
 .listing-title {
-  background: rgba(67, 165, 214, 0.9);
-  text-align: center;
+  justify-content: flex-start;
   margin: 0;
-  padding-top: 10px;
+  margin-top: 50px;
   font-size: 3em;
   text-decoration: overline;
+  text-shadow:
+    0 1px 0px #378ab4,
+    1px 0 0px #5dabcd,
+    1px 2px 1px #378ab4,
+    2px 1px 1px #5dabcd,
+    2px 3px 2px #378ab4,
+    3px 2px 2px #5dabcd,
+    3px 4px 2px #378ab4,
+    4px 3px 3px #5dabcd,
+    4px 5px 3px #378ab4,
+    5px 4px 2px #5dabcd,
+    5px 6px 2px #378ab4,
+    6px 5px 2px #5dabcd,
+    6px 7px 1px #378ab4,
+    7px 6px 1px #5dabcd,
+    7px 8px 0px #378ab4,
+    8px 7px 0px #5dabcd;
+}
+
+.listing {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }

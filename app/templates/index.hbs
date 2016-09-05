@@ -13,17 +13,19 @@
     <img class="dog-img" src="spots-dog.jpg" alt="Spots Rental Listings">
   </div>
 </div>
-<h3 class="listing-title">Rental Listings</h3>
 <div class="listings-section">
-{{#each model as |rental|}}
+  <h3 class="listing-title">Rental Listings</h3>
   <div class="listings">
-    <h3>{{rental.title}}</h3>
-    <ul class="post-details">
-      <li class="post-owner">Owner: {{rental.owner}}</li>
-      <li class="post-type">Type: {{rental.type}}</li>
-      <li class="post-location">Location: {{rental.location}}</li>
-      <li class="post-bedrooms">Bedrooms: {{rental.rooms}}</li>
-    </ul>
+  {{#each model as |rental|}}
+  <div class="listing">
+      <h3>{{rental.title}}</h3>
+      <ul class="post-details">
+        <li class="post-owner">Owner: {{rental.owner}}</li>
+        <li class="post-type">Type: {{rental.type}}</li>
+        <li class="post-location">Location: {{rental.location}}</li>
+        <li class="post-bedrooms">Bedrooms: {{rental.rooms}}</li>
+      </ul>
     </div>
-  {{/each}}
+    {{/each}}
+  </div>
 </div>
