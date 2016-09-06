@@ -88,7 +88,8 @@ padding-left: 0;
 margin: 0;
 justify-content: flex-start;
 position: fixed;
-background: rgb(67, 165, 214);
+background: rgba(67, 165, 214, .9);
+border: #111 solid 1px;
 }
 
 
@@ -108,6 +109,8 @@ background: rgb(67, 165, 214);
 
 .middle-container {
   flex-direction: column;
+  background: url('../top.jpg') fixed center no-repeat;
+  background-size: cover;
 }
 
 .introduction {
@@ -116,6 +119,7 @@ background: rgb(67, 165, 214);
   justify-content: flex-end;
   width: 100%;
   height: 500px;
+  background: rgba(255, 255, 255, .8);
 }
 
 .col-graphs {
@@ -164,24 +168,30 @@ background: rgb(67, 165, 214);
 
 .info-sections {
   justify-content: center;
+  align-items: center;
+  height: 400px;;
 }
 
 .listings-section {
   justify-content: space-around;
   flex-direction: column;
-  background: #fff;
+  background: url('../top.jpg') fixed center no-repeat;
+  background-size: cover;
   width: 100%;
-  height: 300px;
+  height: auto;
 }
 
 .listing-title {
-  justify-content: flex-start;
+  width: 100%;
+  text-align: center;
   margin: 0;
-  margin-top: 50px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 50px;
   font-size: 3em;
+  color: #111;
   text-decoration: overline;
   text-shadow:
-    0 1px 0px #378ab4,
+    0 1px 0px #111,
     1px 0 0px #5dabcd,
     1px 2px 1px #378ab4,
     2px 1px 1px #5dabcd,
@@ -190,19 +200,65 @@ background: rgb(67, 165, 214);
     3px 4px 2px #378ab4,
     4px 3px 3px #5dabcd,
     4px 5px 3px #378ab4,
-    5px 4px 2px #5dabcd,
-    5px 6px 2px #378ab4,
-    6px 5px 2px #5dabcd,
-    6px 7px 1px #378ab4,
-    7px 6px 1px #5dabcd,
-    7px 8px 0px #378ab4,
-    8px 7px 0px #5dabcd;
+    5px 4px 2px #5dabcd
 }
 
-.listing {
-  width: 80%;
+.listing{
+  border: 3px solid #eee;
+  width: 30%;
+  margin-bottom: 50px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  color: #111;
+  background: #eee;
+}
+
+.listings {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background:  rgba(255, 255, 255, 0.8);
+}
+
+.post-pic {
+  height: auto;
+  width: 100%;
+}
+
+.post  {
+  color: #111;
+}
+
+.rent-title {
+  margin: 0;
+  font-size: 2em;
+  width: 100%;
+  text-align: center;
+}
+
+.post-details {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.post-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer {
+  margin:0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+  background: rgba(67, 165, 214, .9);
+}
+
+.footer-link {
+  padding: 10px;
 }
