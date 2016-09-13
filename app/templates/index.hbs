@@ -1,44 +1,13 @@
-<div class="middle-container">
-  <div class="introduction">
-    <div class="col-graphs">
-      <h2 class="middle-title">Find Yours</h2>
-      <p class="middle-p">
-        Art party poutine microdosing godard forage waistcoat. Scenester pitchfork gentrify swag chartreuse, fashion axe kitsch etsy distillery twee. Yr church-key gastropub, farm-to-table YOLO crucifix blue bottle drinking vinegar. Kitsch offal pitchfork, viral
-        fap portland bicycle rights celiac pop-up synth blue bottle. Vinyl slow-carb keytar VHS mustache. Green juice yuccie hella church-key keffiyeh waistcoat, polaroid microdosing lo-fi street art. Microdosing celiac wayfarers, retro occupy kinfolk
-        DIY helvetica gluten-free.
-      </p>
-      <p class="middle-p">
-        Squid green juice butcher pabst chicharrones tacos, schlitz yr celiac plaid austin disrupt keytar. VHS normcore selfies polaroid dreamcatcher, synth crucifix. Affogato keffiyeh vice chia wolf DIY. Authentic tote bag mlkshk cornhole. Messenger bag butcher
-        pug austin artisan bespoke. Knausgaard tilde thundercats, sartorial bicycle rights brooklyn food truck man braid. Bitters craft beer VHS chillwave, tacos irony raw denim vinyl fashion axe tattooed.
-      </p>
-      <i class="fa fa-cloud" aria-hidden="true"></i>
-    </div>
-    <img class="dog-img" src="spots-dog.jpg" alt="Spots Rental Listings">
-  </div>
-</div>
-
-<div class="listings-section">
-  <h3 class="listing-title">Rental Listings</h3>
+<div class="index">
+  <h3 class="index-title">Find Yours</h3>
   <div class="listings">
     {{#each model as |rental|}}
       <div class="listing">
+        <div class="listing-cover"></div>
         <img class="post-pic" src="{{rental.image}}">
-        <h3 class="post rent-title">{{rental.title}}</h3>
-        <div class="post-details">
-          <ul class="post-list">
-            <li class="post owner">Owner:</li>
-            <li class="post type">Type:</li>
-            <li class="post location">Location:</li>
-            <li class="post bedrooms">Bedrooms:</li>
-          </ul>
-          <ul class="post-list">
-            <li class="post owner">{{rental.owner}}</li>
-            <li class="post type">{{rental.type}}</li>
-            <li class="post location">{{rental.city}}</li>
-            <li class="post bedrooms">{{rental.bedrooms}}</li>
-          </ul>
-        </div>
+        <h3  class="post rent-title">{{rental.title}}</h3>
       </div>
     {{/each}}
   </div>
+
 </div>

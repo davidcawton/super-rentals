@@ -10,12 +10,11 @@ body {
 }
 
 p, h1, h2, h3, li, a {
-  font-family: 'BioRhyme', serif;
-  color: #111;
+  font-family: 'Slabo 27px', serif;
   text-decoration: none;
   font-style: normal;
+  background: transparent;
 }
-
 
 .top-container,
 .nav,
@@ -30,141 +29,61 @@ p, h1, h2, h3, li, a {
   align-items: center;
 }
 
+
 /*TOP*/
 .top-container {
-  height: 500px;
+  height: 800px;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: url('../top.jpg') fixed center no-repeat;
+  background: url('../dogtop.jpg') fixed top no-repeat;
   background-size: cover;
   margin-bottom: 0px;
+  border-bottom: 1em solid #fff;
 }
 
 
 .title {
-  text-decoration:overline;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  line-height: 6em;
-  color: #111;
-
+  margin-top: 500px;
+  text-align: left;
+  color: #333;
 }
 
-.title a{
-  font-size: 6em;
-  font-family: 'BioRhyme', serif;
-  color: #111;
-  text-shadow:
-    0 1px 0px #378ab4,
-    1px 0 0px #5dabcd,
-    1px 2px 1px #378ab4,
-    2px 1px 1px #5dabcd,
-    2px 3px 2px #378ab4,
-    3px 2px 2px #5dabcd,
-    3px 4px 2px #378ab4,
-    4px 3px 3px #5dabcd,
-    4px 5px 3px #378ab4,
-    5px 4px 2px #5dabcd,
-    5px 6px 2px #378ab4,
-    6px 5px 2px #5dabcd,
-    6px 7px 1px #378ab4,
-    7px 6px 1px #5dabcd,
-    7px 8px 0px #378ab4,
-    8px 7px 0px #5dabcd;
+.title a, .title h1{
+  font-size: 4em;
+  font-family: 'Slabo 27px', serif;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+  opacity: 0.95;
 }
 
 .title h1 {
-  margin: 10px;
+  margin-left: 30px;
 }
 
 /*TOP nav */
 
 .nav {
-align-items: center;
-width: 100%;
-padding-left: 0;
-margin: 0;
-justify-content: flex-start;
-position: fixed;
-background: rgba(67, 165, 214, .9);
-border: #111 solid 1px;
+  width: 100%;
+  position: fixed;
+  margin: auto;
+  padding-left: 0;
+  align-items: center;
+  justify-content: center;
+  border: #fff solid 3px;
 }
 
 
 .nav li, .nav li a  {
-  list-style: none;
-  font-size: 1em;
-  color: #111;
   padding: 5px;
-  margin: 0px 5px 0px 0px;
-  font-family: 'BioRhyme', serif;
+  margin-right: 5px;
+  list-style: none;
+  font: 1em bold;
+  font-family: 'Slabo 27px', serif;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
 }
-
 
 
 /*MIDDLE */
-
-
-.middle-container {
-  flex-direction: column;
-  background: url('../top.jpg') fixed center no-repeat;
-  background-size: cover;
-}
-
-.introduction {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  width: 100%;
-  height: 500px;
-  background: rgba(255, 255, 255, .8);
-}
-
-.col-graphs {
-  flex-direction: column;
-  width: 50%;
-  height: 100%;
-  margin: 10px;
-
-}
-
-.dog-img {
-  width: 45%;
-  height: 95%;
-  padding: 15px;
-}
-
-.middle-p{
-  font-family: 'BioRhyme', serif;
-  padding-left: 5px;
-}
-
-.middle-title {
-  margin: 50px 0px 0px 0px;
-  font-size: 3em;
-  text-decoration: overline;
-  color: #111;
-  text-align: center;
-  text-shadow:
-    0 1px 0px #378ab4,
-    1px 0 0px #5dabcd,
-    1px 2px 1px #378ab4,
-    2px 1px 1px #5dabcd,
-    2px 3px 2px #378ab4,
-    3px 2px 2px #5dabcd,
-    3px 4px 2px #378ab4,
-    4px 3px 3px #5dabcd,
-    4px 5px 3px #378ab4,
-    5px 4px 2px #5dabcd,
-    5px 6px 2px #378ab4,
-    6px 5px 2px #5dabcd,
-    6px 7px 1px #378ab4,
-    7px 6px 1px #5dabcd,
-    7px 8px 0px #378ab4,
-    8px 7px 0px #5dabcd;
-}
 
 .info-sections {
   justify-content: center;
@@ -172,81 +91,78 @@ border: #111 solid 1px;
   height: 400px;;
 }
 
-.listings-section {
-  justify-content: space-around;
+.index{
   flex-direction: column;
-  background: url('../top.jpg') fixed center no-repeat;
+  background: url('../snowdog.jpg') fixed center no-repeat;
   background-size: cover;
   width: 100%;
-  height: auto;
+  min-height: 700px;
 }
 
-.listing-title {
-  width: 100%;
-  text-align: center;
-  margin: 0;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 50px;
-  font-size: 3em;
+.index-title {
+  width: 90%;
+  margin: auto;
+  text-align: right;
+  font-size: 5em;
+  padding-top: 0px;
+  border-bottom: #000 solid 1px;
   color: #111;
-  text-decoration: overline;
-  text-shadow:
-    0 1px 0px #111,
-    1px 0 0px #5dabcd,
-    1px 2px 1px #378ab4,
-    2px 1px 1px #5dabcd,
-    2px 3px 2px #378ab4,
-    3px 2px 2px #5dabcd,
-    3px 4px 2px #378ab4,
-    4px 3px 3px #5dabcd,
-    4px 5px 3px #378ab4,
-    5px 4px 2px #5dabcd
-}
-
-.listing{
-  border: 3px solid #eee;
-  width: 30%;
-  margin-bottom: 50px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  color: #111;
-  background: #eee;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 
 .listings {
-  width: 100%;
+  width: 90%;
+  margin: auto;
+  padding-top: 100px;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background:  rgba(255, 255, 255, 0.8);
+  justify-content: flex-end;
+}
+
+.listing {
+  width: 30%;
+  height: 300px;
+  margin: 10px;
+  position: relative;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  color: #111;
+}
+
+.listing-cover {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  left:0;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .post-pic {
-  height: auto;
+  height: 300px;
   width: 100%;
 }
 
 .post  {
   color: #111;
+  margin: 0;
+  padding: 0;
 }
 
 .rent-title {
-  margin: 0;
-  font-size: 2em;
+  position: absolute;
+  left: 0;
   width: 100%;
+  bottom: 45%;
   text-align: center;
+  font-size: 2em;
+  font-family: 'Slabo 27px', serif;
+  opacity: 0.8;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  opacity: .2;
 }
 
-.post-details {
-  display: flex;
-  justify-content: space-around;
-  width: 80%;
-}
-
-.post-list {
-  padding-left: 0;
-  list-style: none;
+ .rent-title:hover {
+  opacity: 1;
 }
 
 .footer {
@@ -256,7 +172,11 @@ border: #111 solid 1px;
   justify-content: center;
   list-style: none;
   padding-left: 0;
-  background: rgba(67, 165, 214, .9);
+  background: #000;
+}
+
+.footer a {
+  color: #fff;
 }
 
 .footer-link {
