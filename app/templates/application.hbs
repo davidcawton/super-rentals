@@ -1,13 +1,15 @@
 <ul class="nav">
   <li class="nav-link">{{#link-to 'about'}}<em>info</em>{{/link-to}}</li>
-  <li class="nav-link">{{#link-to 'contact'}}<em>contact</em>{{/link-to}}</li>
+  <li class="nav-link contact">{{#link-to 'contact'}}<em>contact</em>{{/link-to}}</li>
   <li class="nav-link">{{#link-to 'index'}}<em>home</em>{{/link-to}}</li>
 </ul>
-<div class="cover"></div>
-<div class="top-container">
-  <div class="title">
-    {{#link-to 'index'}}<h1 class="headline">spots</h1>{{/link-to}}
-  </div>
+<div class="top">
+    <div class="title">
+      {{#link-to 'index'}}<h1 class="headline">spots</h1>{{/link-to}}
+    </div>
+</div>
+<div class="index-intro">
+  <p class="sub-title">Rental search made easy.</p>
 </div>
 <div class="sections">
   {{outlet}}
@@ -16,7 +18,7 @@
   <li class="footer-link">
     {{#link-to 'about'}}<em>info</em>{{/link-to}}
   </li>
-  <li class="footer-link">
+  <li class="footer-link contact">
     {{#link-to 'contact'}}<em>contact</em>{{/link-to}}
   </li>
   <li class="footer-link">

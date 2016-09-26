@@ -5,7 +5,7 @@ export default function() {
         type: 'rentals',
         id: 1,
         attributes: {
-          title: 'Grand Old Mansion',
+          title: 'Apartment',
           owner: 'Veruca Salt',
           city: 'San Francisco',
           type: 'Estate',
@@ -27,7 +27,7 @@ export default function() {
         type: 'rentals',
         id: 3,
         attributes: {
-          title: 'Downtown Charm',
+          title: 'Homes',
           owner: 'Violet Beauregarde',
           city: 'Portland',
           type: 'Apartment',
